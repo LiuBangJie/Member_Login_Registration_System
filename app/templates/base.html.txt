@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}會員系統{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>{% block header %}會員系統{% endblock %}</h1>
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
